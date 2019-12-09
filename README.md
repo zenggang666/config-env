@@ -22,9 +22,11 @@ conda install [package-name]
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+
 # 配置国内源，安装PyTorch用
 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+
 # 显示源地址
 
 conda config --set show_channel_urls yes
@@ -32,6 +34,7 @@ conda config --set show_channel_urls yes
 #显示已经添加的镜像文件
 
 conda config --show channels
+
 #删除指定的镜像文件
 
 conda config --remove channels https://...
@@ -40,10 +43,12 @@ conda config --remove channels https://...
 #conda修改环境名称（先克隆旧的环境）
 
 conda create --name new-name --clone old-name
-再删除旧环境
+
 conda remove --name old-name --all
 
 #删除虚拟环境中的包
+
 conda remove --name your-env-name package-name
+
 #删除虚拟环境
 conda remove -n your-env-naem --all
