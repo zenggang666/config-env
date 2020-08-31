@@ -17,6 +17,7 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 
 conda install [package-name]
 
+# 此处应该先添加镜像文件，再创建环境，否则可能因为网速慢而导致下载失败
 # 配置国内源，方便安装Numpy,Matplotlib等
 
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
